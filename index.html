@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Club Member Checker</title>
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.3.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.3.1/core.js"></script>
+    <style>
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #e0f7fa;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .card {
+            background: #ffffff;
+            width: 100%;
+            max-width: 360px;
+            padding: 32px 28px;
+            border-radius: 12px;
+            box-shadow: 0 4px 16px rgba(0, 188, 212, 0.25);
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0 0 24px;
+            font-size: 24px;
+            color: #00838f;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px 12px;
+            margin-bottom: 12px;
+            border: 2px solid #b2ebf2;
+            border-radius: 8px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        input:focus {
+            border-color: #00bcd4;
+        }
+
+        button {
+            width: 100%;
+            padding: 11px;
+            background: #00bcd4;
+            color: #ffffff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #00acc1;
+        }
+
+        #result {
+            margin-top: 20px;
+            color: #006064;
+            font-size: 16px;
+            min-height: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>Music Club Member Checker</h1>
+
+        <input type="text" id="first-name" placeholder="First Name">
+        <input type="text" id="last-name" placeholder="Last Name">
+        <button py-click="candidate_checker">Check Member</button>
+
+        <div id="result"></div>
+    </div>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
